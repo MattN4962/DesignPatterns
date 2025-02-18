@@ -1,18 +1,14 @@
 package DesignPatterns.Behavioral.Observer;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class StockExchange implements IStockExchange, IDescriptor{
+public class StockExchange implements IStockExchange, ICommentary{
     List<Observer> _observers;
-    String tickerName;
-    int tickerPrice;
     String tickerMessage;
 
-    public StockExchange(List<Observer> observers, String tickerName, int tickerPrice, String tickerMessage){
+    public StockExchange(List<Observer> observers){
         this._observers = observers;
-        this.tickerPrice = tickerPrice;
-        this.tickerName = tickerName;
-        this.tickerMessage = tickerMessage;
     }
 
     @Override
