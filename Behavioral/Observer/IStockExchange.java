@@ -1,4 +1,4 @@
-package DesignPatters.Behavioral.Observer;
+package DesignPatterns.Behavioral.Observer;
 
 public interface IStockExchange {
 

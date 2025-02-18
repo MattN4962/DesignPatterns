@@ -1,4 +1,4 @@
-package DesignPatters.Behavioral.Observer;
+package DesignPatterns.Behavioral.Observer;
 
 public interface IDescriptor {
     public void setTickerMessage(String tickerName, int tickerPrice, char changeIndicator);
