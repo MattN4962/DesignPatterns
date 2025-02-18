@@ -1,8 +1,6 @@
 package DesignPatterns.Behavioral.Observer;
 
-import java.util.ArrayList;
-
-import javax.management.Descriptor;
+import java.util.ArrayList;;
 
 public class ObserverMain{
 
@@ -12,9 +10,9 @@ public class ObserverMain{
         observer.subscribe();
 
         Observer observer2 = new Observer(exchange, "someotheremail@gmail.com");
-        observer.subscribe();
+        observer2.subscribe();
 
-        ICommentary comObject = ((ICommentary) exchange)
+        ICommentary comObject = ((ICommentary) exchange);
         comObject.setTickerMessage("Appl", 20, '+');
         comObject.setTickerMessage("GOOG", 15, '-');
     }
