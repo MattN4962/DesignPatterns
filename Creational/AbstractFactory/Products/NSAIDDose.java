@@ -1,0 +1,5 @@
+package DesignPatterns.Creational.AbstractFactory.Products;
+
+public class NSAIDDose {
+    
+}
