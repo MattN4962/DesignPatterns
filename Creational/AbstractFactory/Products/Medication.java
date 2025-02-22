@@ -1,7 +1,16 @@
 package DesignPatterns.Creational.AbstractFactory.Products;
 
-import DesignPatterns.Creational.AbstractFactory.Interfaces.IMedication;
+public class Medication {
 
-public class Medication implements IMedication{
+    String medName;
+    String dose;
     
+    public Medication(String name, String dose){
+        this.medName = name;
+        this.dose = dose;
+    }
+
+    public void getDescription(){
+        System.out.println("Created " + this.medName + ". Take this medication " + dose + ".");
+    }
 }
